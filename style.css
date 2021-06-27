@@ -116,6 +116,26 @@ h2{
   transition: all 0.5s;
   border-radius: 50px;
 }
+.manual{
+	background-color: darkgray;
+	max-width: 500px;
+	margin: 0 auto;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.manual li p{
+	font-size: 10px;
+	margin: 10px;
+} 
+code{
+	background: #090909;
+	color: white;
+	display: flex;
+	justify-content: center;
+	max-width: 500px;
+	margin: 5px auto;
+	padding: 20px;
+}
 .hamburger-menu.responsiveNav {
     background-color:red;
   }
