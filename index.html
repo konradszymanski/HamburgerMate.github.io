@@ -16,7 +16,7 @@
     </ul>
   </div>
   <h1>HAMBURGER MATE</h1>
-  <p>Welcome to your "hamburger mate". <br />
+  <p class='text'>Welcome to your "hamburger mate". <br />
     Here you can find ready to use hamburgers menu's. Please read the instruction and follow the steps.
   </p>
   <h2>EXAMPLES</h2>
@@ -88,13 +88,20 @@
       </li>
     </ul>
     <code>
-			/* JS */<br>
+		<br>/* HTML */<br>
+        &lt;div class="hamburger-menu" id="hamburger"&gt;<br>
+        &lt;div class="name" id="hamburger"&gt;<br>
+        &lt;div class="line line-1"&gt;&lt;/div&gt;<br>
+		&lt;div class="line line-2"&gt;&lt;/div&gt;<br>
+		&lt;div class="line line-3"&gt;&lt;/div&gt;<br>
+		&lt;/div&gt;<br>
+		<br>/* JS */<br>
 			document.querySelectorAll('.hamburger-menu').forEach(hamburger => {<br>
 				hamburger.addEventListener('click', function() {<br>
 					 hamburger.classList.toggle("rotHmb");<br>
 				})<br>
 			 })<br>
-			<br>* rotate */<br>
+			 <br><br>/* rotate */<br><br>
           .rotHmb .line-1 {
             transform: rotateZ(-405deg) translate(-9px, 9px);
           }
@@ -104,7 +111,7 @@
           .rotHmb .line-3 {
             transform: rotateZ(405deg) translate(-7px, -7px);
           }
-			 <br>/* rotate2 */ <br>
+		  <br><br>/* rotate2 */ <br><br>
 .rotHmb .rotate21 {
   transform: rotateZ(90deg) translate(12px, 12px);
 }
@@ -115,7 +122,7 @@
 .rotHmb .rotate23 {
   transform: rotateZ(90deg) translate(-12px, -12px);
 }
-<br>/* triangle */ <br>
+<br><br>/* triangle */ <br><br>
           .rotHmb .triangle1 {
             transform: rotateZ(58deg) translate(5px, 15px);
           }
@@ -126,7 +133,7 @@
           .rotHmb .triangle3 {
             transform: rotateZ(-58deg) translate(15px, 2px);
           }
-			 <br>/* middleDown */ <br>
+		  <br><br>/* middleDown */ <br><br>
 .rotHmb .middleDown1 {
   transform: rotateZ(90deg) translate(14px, 12px);
 }
@@ -137,7 +144,7 @@
 .rotHmb .middleDown3 {
   transform: rotateZ(-90deg) translate(9px, 12px);
 }
-<br> /* widthReduce */ <br>
+<br><br> /* widthReduce */ <br><br>
           .rotHmb .widthReduce1 {
             width: 80%;
           }
@@ -148,7 +155,7 @@
           .rotHmb .widthReduce3 {
             width: 40%;
           }
-			 <br>/* widthVertical */ <br>
+		  <br> <br>/* widthVertical */ <br><br>
 .rotHmb .widthVertical1 {
   width: 80%;
   transform: rotateZ(90deg) translate(10px, -12px);
