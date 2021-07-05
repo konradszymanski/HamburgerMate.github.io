@@ -21,6 +21,29 @@ Examples of hamburger menus for everyone
     })
   })
   ```
+  - Add burger styling: 
+  ```
+  .hamburger-menu {
+  cursor: pointer;
+  width: 40px;
+  height: 35px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: #FFF4EC;
+  transition: all 0.5s;
+  border-radius: 50px;
+}
+  ```
   - Find the right class and add to your styles:
   ```
   /* rotate */
